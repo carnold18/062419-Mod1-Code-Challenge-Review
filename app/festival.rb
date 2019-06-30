@@ -21,7 +21,9 @@ class Festival
     end
 
     def films
-
+        Film.all.select do |film|
+            film.festival == self
+        end
     end
 
 end
