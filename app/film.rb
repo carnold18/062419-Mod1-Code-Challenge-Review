@@ -36,12 +36,18 @@ class Film
         end
     end
 
-    # def self.most_festivals
-    #     self.all.
-    # end
+    def self.most_festivals
+        hash = {}
+
+        self.all.each do |film|
+            hash[film] = film.festivals.count
+        end
+        sorted = hash.sort_by { |festival,count| count }
+        sorted.last[0]
+    end
 
     def screen_at_festival(festival,date)
-        Screening.new(date,self,festival)
+        screening = Screening.new(date,self,festival)
     end
 
     # Class methods
