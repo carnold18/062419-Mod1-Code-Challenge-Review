@@ -27,7 +27,7 @@ class Film
         end
     end
 
-    # Use screeings as a helper method to reduce lines of code.
+    # Use screenings as a helper method to reduce lines of code.
     # The above method returns all the filtered screenings
     # Do we need self in order to call the screenings method?
     def festivals
@@ -40,8 +40,8 @@ class Film
     #     self.all.
     # end
 
-    def self.screen_at_festival
-        
+    def screen_at_festival(festival,date)
+        Screening.new(date,self,festival)
     end
 
     # Class methods
