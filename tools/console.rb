@@ -48,5 +48,6 @@ Screening.sorted_screenings.each { |screening| puts screening.date }
 
 puts Film.most_festivals.name
 puts sundance.screenings
+puts sundance.films
 
 Pry.start

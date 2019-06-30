@@ -32,7 +32,7 @@ class Film
     # Do we need self in order to call the screenings method?
     def festivals
         screenings.map do |screening|
-            screening.festival
+            screening.festival.name
         end
     end
 

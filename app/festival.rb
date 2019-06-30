@@ -20,10 +20,19 @@ class Festival
         end
     end
 
+    # lists all the films that have ever been 
+    # screened in that festival
+
     def films
-        Film.all.select do |film|
-            film.festival == self
+        self.screenings.map do |screening|
+            screening.festival.title
+            # screening.map do |screening|
+            #     screening.festivals
+            # end
         end
+        # self.screenings.select do |screening|
+        #     screening.film
+        # end
     end
 
 end
