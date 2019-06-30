@@ -1,7 +1,6 @@
 # Object Relations Practice: Film Festival Edition
 
-
-## Notes
+## Erin Hoffman's Review Notes
 
 Your goal is to build out all of the methods listed in the deliverables.
 
