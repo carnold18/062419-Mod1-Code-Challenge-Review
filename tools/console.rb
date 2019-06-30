@@ -40,6 +40,8 @@ amphitheater = Screening.new("July 6, 2019", neverending_story, sundance)
 # puts theater.hometown_setting
 # puts amphitheater.hometown_setting
 
-puts Screening.all
+Screening.all.each { |screening| puts screening.date }
+
+Screening.sorted_screenings.each { |screening| puts screening.date }
 
 Pry.start

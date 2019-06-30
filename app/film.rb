@@ -40,6 +40,10 @@ class Film
     #     self.all.
     # end
 
+    def self.screen_at_festival
+        
+    end
+
     # Class methods
     def self.all
         @@all
